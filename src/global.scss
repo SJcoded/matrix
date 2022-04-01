@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,25 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+  --bg: #f5f5f5;
+  --primary: #00da30;
+}
+
+ion-content {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "C64";
+  src: url("./assets/fonts/C64/C64_Pro_Mono-STYLE.woff2") format("woff2"),
+    url("./assets/fonts/C64/C64_Pro_Mono-STYLE.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "C64";
+}
