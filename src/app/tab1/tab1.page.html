@@ -2,7 +2,16 @@
 
 <ion-content [fullscreen]="true">
   <div>
-    <p>Terminal start</p>
+    <app-typing-animation
+      [text]="'Welcome. '"
+      [hideCaret]="hideCaret1"
+      (typingAnimationFinished)="onFirstAnimationFinished()"
+    ></app-typing-animation>
+    <app-typing-animation
+      [text]="'I am a Vyfrost.'"
+      [hideCaret]="hideCaret2"
+      (typingAnimationFinished)="onSecondAnimationFinished()"
+    ></app-typing-animation>
   </div>
   <app-grid-animation></app-grid-animation>
 </ion-content>
